@@ -1,0 +1,4 @@
+**/generate
+**/cmm
+**/*.in
+.DS_Store
