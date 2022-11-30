@@ -195,6 +195,7 @@ void gpuThread(int N, int *matA, int *matB, int *output)
         }
         multiply_gpu<<<blocksPerGrid, threadsPerBlock>>>(C, D, E, N, thread_block_factor, blocksPerGrid.y, shift_factor, size_using_shift >> 2);
     }
+    cudaDeviceSynchronize();
     cudaMemcpy(output, E, size_using_shift >> 2, cudaMemcpyDeviceToHost);
 
     cudaFree(A);
