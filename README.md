@@ -30,9 +30,9 @@ Alternatively, you can manually run the program for the different input sets usi
 ./rmm data/input_16384.in
 ```
 
-#Single Thread
+### Single Thread
 
-#Multi Thread
+### Multi Thread
 
 #Performance Profiling
 
@@ -48,6 +48,6 @@ make run_server
 
 ```
 
-#CUDA Implementation Details
+### CUDA Implementation Details
 
-#Performance Profiling
+### Performance Profiling
